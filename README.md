@@ -5,7 +5,7 @@ I will revisit and properly publish this later/maybe :P.
 
 # Install
 
-	make && sudo make install
+	make && sudo make install && sudo systemctl --now enable moused
 
 # Config
 
@@ -16,6 +16,7 @@ All mice are configured in /etc/moused.conf. The file has the following format
 	
 	<LHS> = <Action>
 
+`sudo moused -m`
 ## Example	
 	[Logitech M570]
 
